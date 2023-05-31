@@ -1,0 +1,71 @@
+body {
+    background:rgb(250, 250, 250);
+    font-family: serif;
+    padding: 2rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    
+    box-shadow: 3px 3px 2rem #0008;
+    background-color: #fff;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+    
+.card-blue {
+    padding: 1rem;
+    background-color: rgb(231, 240, 244);
+    border: 1px solid #0003;
+    width: 100%;
+}
+
+h2 {
+    color: rgb(139, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+}  
+    
+input {
+    text-align: right;
+    padding: 0.5rem;
+}
+
+table,
+tbody,
+tr,
+td {
+    width: 100%;
+}
+    
+tr {
+    display: flex;
+    margin: 0.3rem;
+}
+
+table td:first-child {
+    width: 100px;
+    align-self: center;
+}
+
+.d-flex {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.hist {
+    display: flex;
+    background-color: rgb(23, 64, 135);
+    width: 0;
+    padding: 0.6rem;
+    color: #fff;
+    display:block;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Histogram Generator</title>
+        <link rel="stylesheet" href="histogram.css">
+    </head>
+    
+    <body>
+        <div class ="card">
+        <h1>Histogram Generator</h1>
+        <!-- <input type ="file" id="file"> -->
+        <div class="d-flex">
+            <div class="card-blue">
+                <h2>Lower bounds</h2>
+                <table id="table">
+                    <tr>
+                        <!-- <td>Max</td>
+                        <td><input type="number"  id="max" name="max" value="100.00" aria-label="Search"></td> -->
+                        <td><label for="max">Max</label></td>
+                        <td><input type="number" id="max" name="max" value="100.00"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="a+">A+</label></td>
+                        <td><input type="number" id="a+" name="a+" value="95.00"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="a">A</label></td>
+                        <td><input type="number" id="a" name="a" value="90.00"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="a-">A-</label></td>
+                        <td><input type="number" id="a-" name="a-" value="85.00"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="b+">B+</label></td>
+                        <td><input type="number" id="b+" name="b+" value="80.00"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="b">B</label></td>
+                        <td><input type="number" id="b" name="b" value="75.00"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td><label for="b-">B-</label></td>
+                        <td><input type="number" id="b-" name="b-" value="70.00"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c+">C+</label></td>
+                        <td><input type="number" id="c+" name="c+" value="65.00"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c">C</label></td>
+                        <td><input type="number" id="c" name="c" value="60.00"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c-">C-</label></td>
+                        <td><input type="number" id="c-" name="c-" value="55.00"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="d">D</label></td>
+                        <td><input type="number" id="d" name="d" value="50.00"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="f">F</label></td>
+                        <td><input type="number" id="f" name="f" value="0.00"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="d-flex column">
+                <div class="card-blue">
+                    <h2>Histogram</h2>
+                    <table>
+                        <tr>
+                            <td>A+</td>
+                            <td id="A+">
+                                <div class="hist"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td id="A">
+                                <div class="hist"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A-</td>
+                            <td id="A-">
+                                <div class="hist"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>B+</td>
+                            <td id="B+">
+                                <div class="hist"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td id="B">
+                                <div class="hist"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>B-</td>
+                            <td id="B-">
+                                <div class="hist"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C+</td>
+                            <td id="C+">
+                                <div class="hist"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td id="C">
+                                <div class="hist"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C-</td>
+                            <td id="C-">
+                                <div class="hist"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td id="D">
+                                <div class="hist"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td id="F">
+                                <div class="hist"></div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="card-blue">
+                    <form>
+                        <label for="newGrade">New Grade:</label>
+                        <input type="text" id="newGrade" name="newGrade"><br><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>  
+    </div>  
+    <script src="calculate.js"></script>
+    </body>
+</html>
+    
