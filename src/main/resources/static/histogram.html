@@ -13,61 +13,61 @@
     <body>
         <div class ="card">
         <h1>Histogram Generator</h1>
-        <!-- <input type ="file" id="file"> -->
         <div class="d-flex">
             <div class="card-blue">
                 <h2>Lower bounds</h2>
                 <table id="table">
                     <tr>
-                        <!-- <td>Max</td>
-                        <td><input type="number"  id="max" name="max" value="100.00" aria-label="Search"></td> -->
                         <td><label for="max">Max</label></td>
                         <td><input type="number" id="max" name="max" value="100.00"></td>
                     </tr>
                     <tr>
                         <td><label for="a+">A+</label></td>
-                        <td><input type="number" id="a+" name="a+" value="95.00"></td>
+                        <td><input type="number" id="a+" name="grade" value="95.00"></td>
                     </tr>
                     <tr>
                         <td><label for="a">A</label></td>
-                        <td><input type="number" id="a" name="a" value="90.00"></td>
+                        <td><input type="number" id="a" name="grade" value="90.00"></td>
                     </tr>
                     <tr>
                         <td><label for="a-">A-</label></td>
-                        <td><input type="number" id="a-" name="a-" value="85.00"></td>
+                        <td><input type="number" id="a-" name="grade" value="85.00"></td>
                     </tr>
                     <tr>
                         <td><label for="b+">B+</label></td>
-                        <td><input type="number" id="b+" name="b+" value="80.00"></td>
+                        <td><input type="number" id="b+" name="grade"value="80.00"></td>
                     </tr>
                     <tr>
                         <td><label for="b">B</label></td>
-                        <td><input type="number" id="b" name="b" value="75.00"></td>
+                        <td><input type="number" id="b" name="grade" value="75.00"></td>
                     
                     </tr>
                     <tr>
                         <td><label for="b-">B-</label></td>
-                        <td><input type="number" id="b-" name="b-" value="70.00"></td>
+                        <td><input type="number" id="b-" name="grade" value="70.00"></td>
                     </tr>
                     <tr>
                         <td><label for="c+">C+</label></td>
-                        <td><input type="number" id="c+" name="c+" value="65.00"></td>
+                        <td><input type="number" id="c+" name="grade"value="65.00"></td>
                     </tr>
                     <tr>
                         <td><label for="c">C</label></td>
-                        <td><input type="number" id="c" name="c" value="60.00"></td>
+                        <td><input type="number" id="c" name="grade" value="60.00"></td>
                     </tr>
                     <tr>
                         <td><label for="c-">C-</label></td>
-                        <td><input type="number" id="c-" name="c-" value="55.00"></td>
+                        <td><input type="number" id="c-" name="grade"value="55.00"></td>
                     </tr>
                     <tr>
                         <td><label for="d">D</label></td>
-                        <td><input type="number" id="d" name="d" value="50.00"></td>
+                        <td><input type="number" id="d" name="grade" value="50.00"></td>
                     </tr>
                     <tr>
                         <td><label for="f">F</label></td>
-                        <td><input type="number" id="f" name="f" value="0.00"></td>
+                        <td><input type="number" id="f" name="grade" value="0.00"></td>
+                    </tr>
+                    <tr>
+                        <span id="error"></span>
                     </tr>
                 </table>
             </div>
@@ -75,6 +75,7 @@
                 <div class="card-blue">
                     <h2>Histogram</h2>
                     <table>
+                        
                         <tr>
                             <td>A+</td>
                             <td id="A+">
@@ -149,7 +150,7 @@
                         <label for="newGrade">New Grade:</label>
                         <input type="text" id="newGrade" name="newGrade"><br><br>
 
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit"> <span id="submitError"></span>
                     </form>
                 </div>
             </div>

@@ -9,29 +9,35 @@ body {
 }
 
 .card {
-    
-    box-shadow: 3px 3px 2rem #0008;
     background-color: #fff;
     padding: 2rem;
     max-width: 1000px;
     margin: auto;
 }
+
+input {
+    font-family: serif;
+    
+}
     
 .card-blue {
     padding: 1rem;
     background-color: rgb(231, 240, 244);
-    border: 1px solid #0003;
     width: 100%;
 }
 
 h2 {
-    color: rgb(139, 0, 0);
+    color: #b5131a;
     font-family: "Times New Roman", Times, serif;
 }  
     
 input {
-    text-align: right;
-    padding: 0.5rem;
+    padding: 7px;
+    padding-left: 32px;
+    padding-right: 0px;
+    width: 100px;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 10px;
 }
 
 table,
@@ -62,10 +68,12 @@ table td:first-child {
 }
 
 .hist {
-    display: flex;
-    background-color: rgb(23, 64, 135);
-    width: 0;
-    padding: 0.6rem;
-    color: #fff;
-    display:block;
+    width: 50px;
+    height: 15px;
+    background-color:#b5131a;
+    margin: 10px;
+    margin-left: 30px;
+    color: #e9eff1;
+    font-size: 15px;
 }
+    
